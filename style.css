@@ -1,0 +1,205 @@
+@import url('https://fonts.google.com/specimen/Spartan?preview.size=20#standard-styles');
+*{
+    font-family: Spartan, sans-serif;
+}
+html{
+     background-color: #d5e7cc;
+    }
+body{
+    
+    width: 70%;
+    /*text-align: center;*/
+    background-color: #F2F2F2;
+    background-clip: content-box; /*Commando para recortar el fondo al contenido*/
+    padding-left: 15%;
+}
+h1{
+    text-align: center;
+}
+#tittle{
+    color: black;
+    text-decoration: none;
+}
+#tittle:hover{
+    color: #6AA668;
+    text-shadow: 2px 2px black;
+    transition: all 0.3s ease 0s;
+    /*cursor: grab;*/
+    /*cursor: url=("Img/Cursor1.svg"), pointer;*/
+}
+img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.menunav{
+    text-align: center;
+    /*background-color: #6AA668;*/
+    background: repeating-linear-gradient(
+        -45deg,
+        #96BF8F,
+        #96BF8F 20px,
+        #6AA668 20px,
+        #6AA668 40px
+      ); 
+    padding: 10px;   
+}
+.bottonmenu{
+    outline-style: solid;
+    outline-color: #5c8551;
+    background-color: #96BF8F;
+    color: #F2F2F2;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+.bottonmenu:hover{
+    color: #494949 ;
+    background-color: #F2F2F2;
+    border-width: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all 0.5s ease-out 0s;
+}
+p{
+    color:black;
+    font-size: 11pt;
+    text-align: justify;
+    margin: 10px;
+}
+li{
+    color:black;
+    font-size: 11pt;
+    text-align: justify;
+    margin: 10px;
+}
+.LTransp{
+    list-style-type: square;
+}
+
+.LTransp li {
+    margin: 20px;
+}
+img{
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+}
+#Fountain{
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#sunset{
+    float: left;
+    width: 170px;
+    height: auto;
+    margin: 5px;
+}
+#market{
+    float: right;
+    width: 250px;
+    height: auto;
+    margin: 5px;
+    margin-top: 70px;
+}
+#metro{
+    float: right;
+    width: 170px;
+    height: auto;
+    margin: 5px;
+    margin-top: -45px;
+}
+#tranvia{
+    float: right;
+    width: 170px;
+    height: auto;
+    margin: 5px;
+    margin-top: -40px;
+}
+#bici{
+    float: right;
+    width: 170px;
+    height: auto;
+    margin: 5px;
+    margin-top: -15px;
+}
+#carruaje{
+    float: right;
+    width: 170px;
+    height: auto;
+    margin: 5px;
+}
+/* Página uno*/
+.Img-uno{
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+#MPP{
+    float: Left;
+    width: 250px;
+    height: auto;
+    margin: 5px;
+}
+.Tpg1{
+    padding: 5px;
+    text-align: justify;
+    table-layout: fixed;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+.Tpg1 th,td{
+    min-width: 122px;
+    resize: both; 
+    overflow: auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+.Tpg1 th {
+    background-color: #96BF8F;
+    color: #F2F2F2;
+}
+.Tpg1 td:hover{
+    background-color: #96BF8F;
+    color: #F2F2F2;
+}
+.Tpg1 th:hover{
+    background-color: #F2F2F2;
+    color: black;
+}
+/*Página 2*/
+.img_pg2{
+    float: right;
+    width: 250px;
+    height: auto;
+    margin: 5px;
+}
+
+/*Página 3*/
+.img_pg3{
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+}
+.List3{
+    margin-left: 5px;
+}
+/*Página 4*/
+.img_pg4{
+    float: right;
+    width: auto;
+    height: 160px;
+    margin: 5px;
+}
