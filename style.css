@@ -28,6 +28,7 @@ h1{
     /*cursor: url=("Img/Cursor1.svg"), pointer;*/
 }
 img {
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -82,29 +83,35 @@ li{
     text-align: justify;
     margin: 10px;
 }
+/*Página 1*/
 .LTransp{
     list-style-type: square;
+    padding: 1%;
 }
-
 .LTransp li {
     margin: 20px;
 }
-img{
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
-}
-#Fountain{
+.imgCenter{
     display: block;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-#sunset{
+
+.img_pg1L{
     float: left;
-    width: 170px;
+    width: 190px;
     height: auto;
     margin: 5px;
 }
+.img_pg1R{
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
 #market{
     float: right;
     width: 250px;
@@ -112,33 +119,15 @@ img{
     margin: 5px;
     margin-top: 70px;
 }
-#metro{
+.grImgpg1{
+    height: 25px;      /* equals max image height */
+    width: 200px;
     float: right;
-    width: 170px;
-    height: auto;
-    margin: 5px;
-    margin-top: -45px;
+    white-space: nowrap;
+    padding: 2%;
+    padding-bottom: 60%;
 }
-#tranvia{
-    float: right;
-    width: 170px;
-    height: auto;
-    margin: 5px;
-    margin-top: -40px;
-}
-#bici{
-    float: right;
-    width: 170px;
-    height: auto;
-    margin: 5px;
-    margin-top: -15px;
-}
-#carruaje{
-    float: right;
-    width: 170px;
-    height: auto;
-    margin: 5px;
-}
+
 /* Página uno*/
 .Img-uno{
     float: right;
@@ -185,6 +174,15 @@ img{
     height: auto;
     margin: 5px;
 }
+.grImgpg2{
+    height: 25px;      /* equals max image height */
+    width: 200px;
+    float: right;
+    white-space: nowrap;
+    padding: 2%;
+    padding-left: 7%;
+    padding-bottom: 60%;
+}
 
 /*Página 3*/
 .img_pg3{
@@ -193,10 +191,37 @@ img{
     height: auto;
     margin: 5px;
 }
+.grImgpg3{
+    height: 25px;      /* equals max image height */
+    width: 200px;
+    float: right;
+    white-space: nowrap;
+    padding: 2%;
+    padding-left: 10%;
+    padding-bottom: 87%;
+}
 .List3{
     margin-left: 5px;
 }
 /*Página 4*/
+.gr1Imgpg4{
+    height: 25px;      /* equals max image height */
+    width: 200px;
+    float: right;
+    white-space: nowrap;
+    padding: 2%;
+    padding-left: 9%;
+    padding-bottom: 60%;
+}
+.gr2Imgpg4{
+    height: 25px;      /* equals max image height */
+    width: 200px;
+    float: right;
+    white-space: nowrap;
+    padding: 2%;
+    padding-left: 9%;
+    padding-bottom: 45%;
+}
 .img_pg4{
     float: right;
     width: auto;
