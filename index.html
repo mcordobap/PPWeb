@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+<!-- Autor: Juan Manuel Córdoba, Actividad: Ejercicio 1 para el curso Gráfica interactiva de la Universidad Nacional de Colombia -->
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="Img/fl_favicon.png">
+    <meta charset="UTF-8"> <!-- la codificación UTF-8 permite utilizar tildes y ñ en el contenido (nunca en los nombres o las etiquetas) -->
+    <link rel="icon" href="Img/fl_favicon.png"> <!-- ícono o favicon con su ruta especificada que se observa en la pestaña del navegador-->
     <title>Viena</title> <!--Título en la pestaña  -->
     <link href="style.css" rel="stylesheet" type="text/css"> <!-- Establece el vínculo de estilos -->
 </head>
+
 <body>
-<h1><a href="index.html" target="_self" id="tittle">Viena</a></h1>    
+<h1><a href="index.html" target="_self" id="tittle">Viena</a></h1>    <!-- Título de la página con el titular de mayor tamaño -->
 <nav class="menunav"> <!-- Asigna la clase para aplicar en el documento de estilo -->
     <a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a> <!-- Asigna el estilo a cada botton por medio de la clase botton menu -->
     <a class="bottonmenu" href="pg_two.html" target="_self">Población</a>
@@ -15,11 +17,11 @@
     <a class="bottonmenu" href="pg_four.html" target="_self">Historia</a>
     <a  class="bottonmenu" href="Ref.html" target="_self">Referencias</a>
 </nav>
-<img src="https://cdn.britannica.com/s:690x388,c:crop/66/99566-050-59001F47/Fountain-Neptune-grounds-Gloriette-Vienna-Schloss-Schonbrunn.jpg" class="imgCenter">
+<img src="Img/ImgIndex/Fuente_Neptuno.jpg" class="imgCenter"> <!-- Insertar una imagen con su estilo especificado en la clase imgCenter -->
 <h2>
     Descripción general
 </h2>
-<img src="https://i.pinimg.com/736x/2e/75/a1/2e75a1bb9eded9722a777e93fac1a565.jpg" class="img_pg1L" id="sunset"/> 
+<img src="Img/ImgIndex/Sunset.jpg" class="img_pg1L" id="sunset"/> <!-- Inserta una imagen y además del estilo aplicado con la clase img_pg1, le aplica un estilo específico con el id sunset -->
 <br>
 <br>
 <p>
@@ -28,7 +30,7 @@
 <br>
 <br>
 <br>
-<img src="https://think.ing.com/uploads/hero/_w1200/171031-image-viennaaustria.jpg" id="market"/>
+<img src="Img/ImgIndex/Market.jpg" id="market"/>
 <h2>
     Economía
 </h2>
@@ -40,13 +42,13 @@
 <h2>
     Transporte público
 </h2>
-<div class="grImgpg1">
-    <img src="https://i.pinimg.com/originals/cd/15/b8/cd15b89468f0e0412e1b74083e683ba5.jpg" class="img_pg1R"/>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlje7sg9gsMopido1WUlwBksSFzqwWr4GzQ&usqp=CAU" class="img_pg1R"/>
-    <img src="https://www.viajaraviena.com/wp-content/uploads/Citybike.jpg" class="img_pg1R"/>
-    <img src="https://www.viajaraviena.com/wp-content/uploads/fiaker-en-viena.jpg" class="img_pg1R" >
+<div class="grImgpg1"> <!-- Se realiza un div para almacenar un grupo de imágenes y con estilo lograr mantener un espacio específico entre imágenes y entre el texto -->
+    <img src="Img/ImgIndex/Metro.jpg" class="img_pg1R"/>
+    <img src="Img/ImgIndex/Tranvia.jfif" class="img_pg1R"/>
+    <img src="Img/ImgIndex/Citybike.jpg" class="img_pg1R"/>
+    <img src="Img/ImgIndex/fiaker-en-viena.jpg" class="img_pg1R" >
 </div>
-<ul class="LTransp">
+<ul class="LTransp"> <!-- Lista no ordenada con párrafos explicativos -->
     <li>
         Metro
         <p>
@@ -85,5 +87,18 @@
     </li>
 </ul>
 
+
+<footer class="fx_footer"> <!-- Pie de página -->
+    <div class="ft_content">
+        <p>
+            Autor: Juan Manuel Córdoba Peña
+        </p>
+        <nav>
+            <a href="#tittle" class="bottonmenu">Inicio página</a>
+            <a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a>
+            <a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a>
+        </nav>
+    </div>
+</footer>
 </body>
 </html>

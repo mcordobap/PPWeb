@@ -1,181 +1,231 @@
-@import url('https://fonts.google.com/specimen/Spartan?preview.size=20#standard-styles');
-*{
-    font-family: Spartan, sans-serif;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');/* Importa el fondo de texto para utilizar en la página */
+@font-face {
+    font-family: Spartan, sans-serif; /*Define una fuente*/
+    src: url('https://fonts.google.com/specimen/Spartan?preview.size=20#standard-styles'); /*Indica la ubicación de la fuente*/
 }
-html{
-     background-color: #d5e7cc;
+html{ 
+     background-color: #d5e7cc; /* Aplica el color a la parte de atrás de la página */
     }
 body{
     
-    width: 70%;
-    /*text-align: center;*/
-    background-color: #F2F2F2;
+    width: 70%; /* Establece un ancho de la página de acuerdo con el elemento contenedor, en este caso html, la pantalla*/
+    background-color: #F2F2F2; /* Color del contenedor body */
     background-clip: content-box; /*Commando para recortar el fondo al contenido*/
-    padding-left: 15%;
+    padding-left: 15%; /*Establece un padding izquierdo en el body de acuerdo al tamaño de la pantalla*/
+    padding-bottom: 100px;
 }
 h1{
-    text-align: center;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center; /* Centra todas los títulos con el titular más grande */
+}
+h2,h3,h4,h5,h6{
+    font-family: Spartan,sans-serif;
+    margin: 10px;
+}
+a{
+    font-family: Spartan,sans-serif;
+}
+a:link{
+    text-decoration: none; /* Elimina el subrayado de los links*/
 }
 #tittle{
-    color: black;
-    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    size: 50px;
+    color: black; /* Establece el color del título */
 }
-#tittle:hover{
+#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
     color: #6AA668;
     text-shadow: 2px 2px black;
     transition: all 0.3s ease 0s;
-    /*cursor: grab;*/
-    /*cursor: url=("Img/Cursor1.svg"), pointer;*/
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress; /* Estilo de cursor, fuente: https://juegosbombillas.es.tl/Cursores-Para-Tu-Web-Html.htm */
 }
-img {
+a:hover{
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
+}
+img { /* Establece el estilo general para las imágenes */
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
+	-webkit-transform: scale(1); /* A través de la propiedad transformación aplica una modificación en dos dimensiones */
+	transform: scale(1); /* Transform es una propiedad que permite rotar, escalar o mover un elemento. Modifica el espacio de el formato visual de CSS */
+	-webkit-transition: .3s ease-in-out; /* Realiza una transición de salida de 0.3 segundos */
 	transition: .3s ease-in-out;
 }
 img:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1); /* A través de la propiedad transformación aplica una modificación en dos dimensiones */
+	transform: scale(1.05);
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
 }
-.menunav{
+.menunav{ /* Al ser una clase lleva un punto antes y modifica el estilo de las etiquetas que estén marcadas, en este caso permite modificar el menú de navegación */
     text-align: center;
-    /*background-color: #6AA668;*/
-    background: repeating-linear-gradient(
+    background: repeating-linear-gradient( /* Establece en el fondo un patrón de repetición lineal de gradiente (transición progresiva entre dos o más colores). <ángulo>, <color 1>, <color 2> ancho entre colores, <color 3>  ancho entre colores, <color 4> ancho apartir del color inicial. De manera general (<ángulo>,<lista de colores>)*/
         -45deg,
         #96BF8F,
         #96BF8F 20px,
         #6AA668 20px,
         #6AA668 40px
       ); 
-    padding: 10px;   
+    padding: 10px;   /* Padding de la barra de navegación */
 }
-.bottonmenu{
-    outline-style: solid;
-    outline-color: #5c8551;
-    background-color: #96BF8F;
+.bottonmenu{ /* Establece el estilo para cada botón del menu de navegación */
+    outline-style: solid; /* Establece el estilo del contorno del elemento */
+    outline-color: #5c8551; /* Indica el color del contorno */
+    background-color: #96BF8F; 
     color: #F2F2F2;
-    text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 25px;
+    border-radius: 25px; /* Define el radio de redondeo de las esquinas */
 }
-.bottonmenu:hover{
+.bottonmenu:hover{ /* Indica el estilo cuando el cursor está sobre los botones */
     color: #494949 ;
     background-color: #F2F2F2;
     border-width: 1px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 0px;
+    border-radius: 0px; /* Define el radio de redondeo de las esquinas */
     padding-top: 2px;
     padding-bottom: 2px;
-    transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-in-out;
 }
-p{
+.bottonmenu:visited{ /*Estilo que se aplica a los botones que ya se han visitado*/
+    outline-style: none;
+    color: #F2F2F2;
+    background-color: transparent;
+    background-image: url(Img/Bt1.png); /*No funciona en la mayoría de navegadores por errores de privacidad*/
+    background-size: contain;
+}
+.bottonmenu:hover:visited{ /*Estilo que se aplica a los botones que ya se han visitado y se le coloca el cursor*/
+    color: #494949 ;
+}
+p{ /* Estilo de las etiquetas de párrafo */
+    font-family: Spartan,sans-serif;
     color:black;
     font-size: 11pt;
     text-align: justify;
-    margin: 10px;
-}
-li{
-    color:black;
-    font-size: 11pt;
-    text-align: justify;
-    margin: 10px;
-}
-/*Página 1*/
-.LTransp{
-    list-style-type: square;
-    padding: 1%;
-}
-.LTransp li {
     margin: 20px;
 }
-.imgCenter{
-    display: block;
+li{ /* Estilo de los ítems de listas */
+    color:black;
+    font-size: 11pt;
+    text-align: justify;
+    margin: 10px;
+}
+.fx_footer{/* Estilo para aplicar estilo al pie de página */
+    font-family: 'Dancing Script', cursive;
+    height: 70px;
+    background: #F2F2F2;
+    position: relative; top: 120px; /* Posición relativa al elemento anterior para que siempre quede debajo el pie de pagina */
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+.fx_footer p{ /* Estilo de los elementos p del pie de página */
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;    
+}
+.ft_content nav{ /* Estilo de la barra de navegación del pie de pagina */
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+
+/*Página 1*/
+.LTransp{ /* Estilo de ítems de lista con la etiqueta de clase */
+    list-style-type: square;
+    padding: 1%; /* Da un padding en porcentaje de acuerdo al contenedor, en este caso, el body */
+}
+.LTransp li { /* Estilo de los ítems de lista dentro de la clase */
+    margin: 20px;
+}
+.imgCenter{ /* Estilo de las imágenes con esta etiqueta */
+    display: block; /* El elemento se comporta como un bloque por lo que genera líneas de quiebre antes y después del elemento */
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50%; /* De acuerdo al contenedor (body) establece un ancho del 50% y con márgenes automáticas y el display lo centra*/
 }
 
-.img_pg1L{
-    float: left;
+.img_pg1L{ /* Estilo de las imágenes con esta etiqueta */
+    float: left; /* permite ubicar el elemento dentro del contenedor de manera que los elementos adyacentes lo rodeen. En este caso se ubica a la izquierda */
     width: 190px;
     height: auto;
     margin: 5px;
 }
-.img_pg1R{
+.img_pg1R{ /* Estilo de las imágenes con esta etiqueta */
     float: right;
     width: 200px;
     height: auto;
     margin: 5px;
 }
 
-#market{
+#market{ /* Estilo de las imágenes con este id */
     float: right;
     width: 250px;
     height: auto;
     margin: 5px;
     margin-top: 70px;
 }
-.grImgpg1{
-    height: 25px;      /* equals max image height */
+.grImgpg1{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
+    height: 25px;      
     width: 200px;
-    float: right;
-    white-space: nowrap;
+    float: right; 
+    white-space: nowrap; /* white-space es una propiedad que indica como utilizar el espacio en blanco. Nowrap hace que se eliminen los quiebres de línea de texto */
     padding: 2%;
     padding-bottom: 60%;
 }
 
 /* Página uno*/
-.Img-uno{
+.Img-uno{ /* Estilo de las imágenes con esta etiqueta */
     float: right;
     width: 200px;
     height: auto;
     margin: 5px;
 }
-#MPP{
+#MPP{ /* Estilo de las imágenes con este id */
     float: Left;
     width: 250px;
     height: auto;
     margin: 5px;
 }
-.Tpg1{
+.Tpg1{ /* Estilo de la tabla con esta clase */
+    border-collapse: collapse; /* Une los bordes de la tabla */
     padding: 5px;
-    text-align: justify;
-    table-layout: fixed;
-    word-wrap: break-word;
-    border-collapse: collapse;
+    text-align: justify; /* Justifica el texto */
+    table-layout: fixed; /* Manera de mostrar la tabla, fixed es una de las maneras más rápidas de carga */
+    word-wrap: break-word; /* Hace qie el texto sea contenido dentro de las celdas y no se desborde */
 }
-.Tpg1 th,td{
+.Tpg1 th,td{ /* Indica el estilo de los encabezados y celdas de la clase indicada */
     min-width: 122px;
     resize: both; 
     overflow: auto;
     padding: 5px;
     border: 1px solid black;
 }
-.Tpg1 th {
+.Tpg1 th { /* estilo de los encabezados de la tabla de la clase */
     background-color: #96BF8F;
     color: #F2F2F2;
+    text-align: center;
 }
-.Tpg1 td:hover{
+.Tpg1 td:hover{ /* estilo de las celdas de la tabla de la clase cuando el cursor está sobre el elemento */
     background-color: #96BF8F;
     color: #F2F2F2;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
 }
-.Tpg1 th:hover{
+.Tpg1 th:hover{ /* estilo de los encabezados de la tabla de la clase cuando el cursor está sobre el elemento */
     background-color: #F2F2F2;
     color: black;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
 }
 /*Página 2*/
-.img_pg2{
+.img_pg2{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
     width: 250px;
     height: auto;
     margin: 5px;
 }
-.grImgpg2{
-    height: 25px;      /* equals max image height */
+.grImgpg2{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
+    height: 25px;     
     width: 200px;
     float: right;
     white-space: nowrap;
@@ -185,14 +235,14 @@ li{
 }
 
 /*Página 3*/
-.img_pg3{
+.img_pg3{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
     width: 300px;
     height: auto;
     margin: 5px;
 }
-.grImgpg3{
-    height: 25px;      /* equals max image height */
+.grImgpg3{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
+    height: 25px;      
     width: 200px;
     float: right;
     white-space: nowrap;
@@ -200,12 +250,12 @@ li{
     padding-left: 10%;
     padding-bottom: 87%;
 }
-.List3{
+.List3{ /* Agrega estilo a una lista no ordenada */
     margin-left: 5px;
 }
 /*Página 4*/
-.gr1Imgpg4{
-    height: 25px;      /* equals max image height */
+.gr1Imgpg4{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
+    height: 25px;      
     width: 200px;
     float: right;
     white-space: nowrap;
@@ -213,8 +263,8 @@ li{
     padding-left: 9%;
     padding-bottom: 60%;
 }
-.gr2Imgpg4{
-    height: 25px;      /* equals max image height */
+.gr2Imgpg4{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
+    height: 25px;      
     width: 200px;
     float: right;
     white-space: nowrap;
@@ -222,7 +272,7 @@ li{
     padding-left: 9%;
     padding-bottom: 45%;
 }
-.img_pg4{
+.img_pg4{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
     width: auto;
     height: 160px;
