@@ -4,6 +4,7 @@
     font-family: Spartan, sans-serif; /*Define una fuente*/
     src: url('https://fonts.google.com/specimen/Spartan?preview.size=20#standard-styles'); /*Indica la ubicación de la fuente*/
 }
+/* Etiqueta de elementos generales */
 html{ 
      background-color: #d5e7cc; /* Aplica el color a la parte de atrás de la página */
     }
@@ -30,20 +31,10 @@ a{
 a:link{
     text-decoration: none; /* Elimina el subrayado de los links*/
 }
-#tittle{
-    font-family: 'Dancing Script', cursive;
-    size: 50px;
-    color: black; /* Establece el color del título */
-}
-#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
-    color: #6AA668;
-    text-shadow: 2px 2px black;
-    transition: all 0.3s ease 0s;
-    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress; /* Estilo de cursor, fuente: https://juegosbombillas.es.tl/Cursores-Para-Tu-Web-Html.htm */
-}
 a:hover{
     cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
 }
+
 img { /* Establece el estilo general para las imágenes */
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
 	-webkit-transform: scale(1); /* A través de la propiedad transformación aplica una modificación en dos dimensiones */
@@ -55,6 +46,31 @@ img:hover {
 	-webkit-transform: scale(1.1); /* A través de la propiedad transformación aplica una modificación en dos dimensiones */
 	transform: scale(1.05);
     cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
+}
+p{ /* Estilo de las etiquetas de párrafo */
+    font-family: Spartan,sans-serif;
+    color:black;
+    font-size: 11pt;
+    text-align: justify;
+    margin: 20px;
+}
+li{ /* Estilo de los ítems de listas */
+    color:black;
+    font-size: 11pt;
+    text-align: justify;
+    margin: 10px;
+}
+/* Estilo del título y barra de navegación */
+#tittle{
+    font-family: 'Dancing Script', cursive;
+    size: 50px;
+    color: black; /* Establece el color del título */
+}
+#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
+    color: #6AA668;
+    text-shadow: 2px 2px black;
+    transition: all 0.3s ease 0s;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress; /* Estilo de cursor, fuente: https://juegosbombillas.es.tl/Cursores-Para-Tu-Web-Html.htm */
 }
 .menunav{ /* Al ser una clase lleva un punto antes y modifica el estilo de las etiquetas que estén marcadas, en este caso permite modificar el menú de navegación */
     text-align: center;
@@ -97,19 +113,7 @@ img:hover {
 .bottonmenu:hover:visited{ /*Estilo que se aplica a los botones que ya se han visitado y se le coloca el cursor*/
     color: #494949 ;
 }
-p{ /* Estilo de las etiquetas de párrafo */
-    font-family: Spartan,sans-serif;
-    color:black;
-    font-size: 11pt;
-    text-align: justify;
-    margin: 20px;
-}
-li{ /* Estilo de los ítems de listas */
-    color:black;
-    font-size: 11pt;
-    text-align: justify;
-    margin: 10px;
-}
+/* Estilo del pie de página */
 .fx_footer{/* Estilo para aplicar estilo al pie de página */
     font-family: 'Dancing Script', cursive;
     height: 70px;
@@ -125,12 +129,11 @@ li{ /* Estilo de los ítems de listas */
 }
 .ft_content nav{ /* Estilo de la barra de navegación del pie de pagina */
     position: relative;
-    bottom: 10px;
+    bottom: 10px; /* Desplazamiento desde su posición original de la parte baja del elementos */
     text-align: center;
-    /*border: 1px solid red;*/
 }
 
-/*Página 1*/
+/* Estilo en index */
 .LTransp{ /* Estilo de ítems de lista con la etiqueta de clase */
     list-style-type: square;
     padding: 1%; /* Da un padding en porcentaje de acuerdo al contenedor, en este caso, el body */
@@ -150,7 +153,7 @@ li{ /* Estilo de los ítems de listas */
     float: left; /* permite ubicar el elemento dentro del contenedor de manera que los elementos adyacentes lo rodeen. En este caso se ubica a la izquierda */
     width: 190px;
     height: auto;
-    margin: 5px;
+    margin: 2%;
 }
 .img_pg1R{ /* Estilo de las imágenes con esta etiqueta */
     float: right;
@@ -163,7 +166,7 @@ li{ /* Estilo de los ítems de listas */
     float: right;
     width: 250px;
     height: auto;
-    margin: 5px;
+    margin: 2%;
     margin-top: 70px;
 }
 .grImgpg1{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
@@ -175,7 +178,7 @@ li{ /* Estilo de los ítems de listas */
     padding-bottom: 60%;
 }
 
-/* Página uno*/
+/* Estilo pg_one*/
 .Img-uno{ /* Estilo de las imágenes con esta etiqueta */
     float: right;
     width: 200px;
@@ -217,7 +220,7 @@ li{ /* Estilo de los ítems de listas */
     color: black;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;
 }
-/*Página 2*/
+/* Estilo pg_two*/
 .img_pg2{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
     width: 250px;
@@ -234,7 +237,7 @@ li{ /* Estilo de los ítems de listas */
     padding-bottom: 60%;
 }
 
-/*Página 3*/
+/* Estilo pg_three */
 .img_pg3{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
     width: 300px;
@@ -253,7 +256,7 @@ li{ /* Estilo de los ítems de listas */
 .List3{ /* Agrega estilo a una lista no ordenada */
     margin-left: 5px;
 }
-/*Página 4*/
+/* Estilo pg_four */
 .gr1Imgpg4{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
     height: 25px;      
     width: 200px;
@@ -274,7 +277,11 @@ li{ /* Estilo de los ítems de listas */
 }
 .img_pg4{ /* Indica el estilo de las imágenes que tengan esta etiqueta */
     float: right;
-    width: auto;
-    height: 160px;
+    width: 220px;
+    height: auto;
     margin: 5px;
+}
+/* Estilo de referencias */
+.ListaRef{
+    word-wrap: break-word; /* Evita el desbordamiento de los link fuera del body */
 }
