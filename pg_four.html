@@ -8,13 +8,19 @@
 </head>
 <body>
 <h1><a href="index.html" target="_self" id="tittle">Viena</a></h1>   
-<nav class="menunav">
-    <a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a>
-    <a class="bottonmenu" href="pg_two.html" target="_self">Población</a>
-    <a class="bottonmenu" href="pg_three.html" target="_self">Actividades</a>
-    <a class="bottonmenu" href="pg_four.html" target="_self">Historia</a>
-    <a  class="bottonmenu" href="Ref.html" target="_self">Referencias</a>
+<header>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle"><img src="Img/ListDisp.png" width="7%"></label>  
+<nav class="menunav"> <!-- Asigna la clase para aplicar en el documento de estilo -->
+    <ul>
+        <li><a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a></li> <!-- Asigna el estilo a cada botton por medio de la clase botton menu -->
+        <li><a class="bottonmenu" href="pg_two.html" target="_self">Población</a></li>
+        <li><a class="bottonmenu" href="pg_three.html" target="_self">Actividades</a></li>
+        <li><a class="bottonmenu" href="pg_four.html" target="_self">Historia</a></li>
+        <li><a  class="bottonmenu" href="Ref.html" target="_self">Referencias</a></li>
+    </ul>  
 </nav>
+</header>
 
 <p>
     Viena fue habitada originalmente por los celtas en 500 a.C. Luego germanos asentaron esa zona, y en el siglo I a.C. los romanos llegaron allí. Viena como ciudad nació como un campamento romano que controlaba la Provincia de Panonia.
@@ -34,16 +40,16 @@
     Época imperial
 </h2>
 
-<h3>
+<h3 id="Habsburgo">
     Dinastía Babenberg y Los Habsburgo
 </h3>
 <p>
-    La poderosa familia Babenberg se hace con el ducado de esta ciudad tras fijarse en su estratégica localización. Su primer duque libró a Viena de la dependencia de los húngaros. Luego se trasladó la capital a Viena y se inicia un periodo de crecimiento económico. En el año 1237 se declaró a Viena como ciudad imperial. Federico II fue el último duque de la dinastía Babenberg al morir sin descendencia en una guerra contra los húngaros. El trono de Austria fue   disputado hasta que Habsburgo se impuso y comenzó una larga y poderosa dinastía.
+    La poderosa familia Babenberg se hace con el ducado de esta ciudad tras fijarse en su estratégica <a href="pg_one.html#Local"> localización </a>. Su primer duque libró a Viena de la dependencia de los húngaros. Luego se trasladó la capital a Viena y se inicia un periodo de crecimiento económico. En el año 1237 se declaró a Viena como ciudad imperial. Federico II fue el último duque de la dinastía Babenberg al morir sin descendencia en una guerra contra los húngaros. El trono de Austria fue   disputado hasta que Habsburgo se impuso y comenzó una larga y poderosa dinastía.
 </p>
 <h3>
     Imperio de Austria
 </h3>
-<ul>
+<ul id="LNO1">
     <li>La derrota que sufrió Francisco II por los franceses le obligó a renunciar a su cargo de emperador en el Sacro imperio y dio pie al Imperio de Austria.</li>
 
     <li>Tras la toma de Viena en 1809 por Napoleón y su posterior derrota en 1813, se convoca el Congreso de Viena de 1815. Metternich consigue restaurar el orden previo a Napoleón y mantenerse con poder en Europa.</li>
@@ -91,15 +97,17 @@
 </p>
 <img src="Img/imgPg_Four/Viena hoy en día.jpg" alt="Viena hoy en día" class="imgCenter" />
 
-<footer class="fx_footer">
+<footer class="fx_footer"> <!-- Pie de página -->
     <div class="ft_content">
         <p>
             Autor: Juan Manuel Córdoba Peña
         </p>
         <nav>
-            <a href="#tittle" class="bottonmenu">Inicio página</a>
-            <a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a>
-            <a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a>
+            <ul>
+            <li><a href="#tittle" class="bottonmenu">Inicio página</a></li>
+            <li><a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a></li>
+            <li><a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a></li>
+            </ul>
         </nav>
     </div>
 </footer>

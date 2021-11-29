@@ -8,13 +8,19 @@
 </head>
 <body>
 <h1><a href="index.html" target="_self" id="tittle">Viena</a></h1>    
-<nav class="menunav">
-    <a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a>
-    <a class="bottonmenu" href="pg_two.html" target="_self">Población</a>
-    <a class="bottonmenu" href="pg_three.html" target="_self">Actividades</a>
-    <a class="bottonmenu" href="pg_four.html" target="_self">Historia</a>
-    <a  class="bottonmenu" href="Ref.html" target="_self">Referencias</a>
+<header>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle"><img src="Img/ListDisp.png" width="7%"></label>  
+<nav class="menunav"> <!-- Asigna la clase para aplicar en el documento de estilo -->
+    <ul>
+        <li><a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a></li> <!-- Asigna el estilo a cada botton por medio de la clase botton menu -->
+        <li><a class="bottonmenu" href="pg_two.html" target="_self">Población</a></li>
+        <li><a class="bottonmenu" href="pg_three.html" target="_self">Actividades</a></li>
+        <li><a class="bottonmenu" href="pg_four.html" target="_self">Historia</a></li>
+        <li><a  class="bottonmenu" href="Ref.html" target="_self">Referencias</a></li>
+    </ul>  
 </nav>
+</header>
     <ul class="ListaRef">
         <li>
             <a href="https://color.adobe.com/es/explore" target="_blank"> Paleta de colores </a>
@@ -152,18 +158,20 @@
         </li>
     </ul>
 
-<footer class="fx_footer">
-    <div class="ft_content">
-        <p>
-            Autor: Juan Manuel Córdoba Peña
-        </p>
-        <nav>
-            <a href="#tittle" class="bottonmenu">Inicio página</a>
-            <a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a>
-            <a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a>
-        </nav>
-    </div>
-</footer>
+    <footer class="fx_footer"> <!-- Pie de página -->
+        <div class="ft_content">
+            <p>
+                Autor: Juan Manuel Córdoba Peña
+            </p>
+            <nav>
+                <ul>
+                <li><a href="#tittle" class="bottonmenu">Inicio página</a></li>
+                <li><a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a></li>
+                <li><a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 </html>
