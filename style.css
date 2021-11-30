@@ -17,6 +17,10 @@ body{
 }
 #toggle{ /*Boton de despligue del menú*/
     display: none; /*Evita que este aparezca para este tamaño*/
+    width: 2%;
+}
+#LD{
+    width: 15%;
 }
 header {
     width: 100%;
@@ -364,6 +368,15 @@ ul>li>ul{
     transition: all 1s; 
     padding: 10px;   /* Padding de la barra de navegación */
     min-width: 135px;
+    background: repeating-linear-gradient( /* Establece en el fondo un patrón de repetición lineal de gradiente (transición progresiva entre dos o más colores). <ángulo>, <color 1>, <color 2> ancho entre colores, <color 3>  ancho entre colores, <color 4> ancho apartir del color inicial. De manera general (<ángulo>,<lista de colores>)*/
+            -45deg,
+            #96bf8f88,
+            #96bf8f88 20px,
+            #6aa66888 20px,
+            #6aa66888 40px
+          ); 
+        padding: 1px;   /* Padding de la barra de navegación */
+        text-align: center;
     }
     .menunav ul {
         flex-direction: column;  /* se despliega en sentido vertical*/
@@ -502,7 +515,7 @@ ul>li>ul{
     .grImgpg2{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
     height: 25px;     
     width: 50%;
-    min-width: 300px;
+    min-width: 50px;
     float: right;
     white-space: nowrap;
     padding: 2%;
