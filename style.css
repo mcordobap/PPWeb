@@ -422,6 +422,7 @@ ul>li>ul{
     margin: 2%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center 1%;
 }
 #Information{
     font-family: 'Playfair Display', serif;

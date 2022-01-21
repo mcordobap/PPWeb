@@ -46,7 +46,7 @@ function Punto1() {
 	if (window.screen.width>600){
 		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
 	}else{
-		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+		fondo.style.height = "2%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
 	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
@@ -79,7 +79,7 @@ function Punto2() {
 	contenido.style.color="white"; /*Cambia el color de la letra para mayor contraste*/
 	contenido.innerHTML = 'El <b>Ayuntamiento de Viena </b>fue construido entre 1872 y 1883 y es una construcción magnífica: se utilizaron unos 30 millones de ladrillos y más de 40.000 metros cúbicos de piedra natural. El patio del ayuntamiento, portificado con arcadas, es uno de los patios interiores más grandes de Europa con 2.804 m². La sala de fiestas tiene una longitud de 71 metros, un ancho de 20 metros y una altura de 18,5 metros. Si las autoridades encargadas de la protección contra incendios lo hubieran permitido, habrían podido bailar vals 1.500 parejas al mismo tiempo.<br>La altura de la torre es de 97,9 m, sobre la que se asienta el hombre de hierro del ayuntamiento, de 3,40 m de alto con el estandarte de 6 m, que se ha convertido en uno de los símbolos de Viena. Talla de pie: 63. El Ayuntamiento de Viena es la sede de la alcaldía y el centro de conferencias del senado de la ciudad/gobierno federal y consejo municipal/parlamento federal.'; /*Se cambia el contenido del texto*/
 	contenido.style.position = "relative"; /*Se cambia el tipo de posición del contenedor para moverlo*/ 
-	contenido.style.left = "55%"; /*Se mueve contenedor a la derecha para observar la imagen*/
+	contenido.style.left = "0%"; /*Se mueve contenedor a la derecha para observar la imagen*/
 	setTimeout(() => {unfade(contenido)}, 2000); /*Se utiliza la función unfade para darle opacidad al contenedor y se le establece un tiempo de espera para observar la imagen al comienzo completamente*/	
 }
 
