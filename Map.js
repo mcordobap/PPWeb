@@ -43,7 +43,11 @@ function Punto1() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat"; /*Se coloca para realizar el cambio de imagen y dimensionarla*/
 	fondo.style.backgroundImage="url('Img/imgMap/hofburg-palace.jpeg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -63,7 +67,11 @@ function Punto2() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/CityHall.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -83,7 +91,11 @@ function Punto3() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Musikverein.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -103,7 +115,11 @@ function Punto4() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/IglesiaDeSanCarlosBorromeo.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -121,7 +137,11 @@ function Punto5() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Museumsquartier_Kunsthalle_Wien.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -139,7 +159,11 @@ function Punto6() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/SoundOfVienna.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -157,7 +181,11 @@ function Punto7() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Voltiva.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -175,7 +203,11 @@ function Punto8() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Maria am Gestade.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -193,7 +225,11 @@ function Punto9() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Museo de Artes Aplicadas.jpg')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
@@ -211,7 +247,11 @@ function Punto10() {
 	contenido.scrollIntoView(); /*Se mueve la pantalla hacia el contenido*/
 	fondo.style.background="0 cover no-repeat";
 	fondo.style.backgroundImage="url('Img/imgMap/Restaurante.webp')"; /*Se establece la imagen de fondo, fuente en referencias*/
-	fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen*/
+	if (window.screen.width>600){
+		fondo.style.height = "70%"; /*Se establece una altura relativa para el contenedor de imagen para dispositivos como tablet, portátil o escritorio*/	
+	}else{
+		fondo.style.height = "5%"; /*Se establece una altura relativa para el contenedor de imagen si el dispositivo es móvil*/
+	}
 	fondo.style.transitionDelay="1s"; /*Se genera un delay o retraso en la animación*/
 	contenido.style.height = "70%"; /*Se establece una altura relativa para el contenedor del texto*/
 	contenido.style.backgroundColor="#000000"; /*Da el color al contenedor de texto*/
