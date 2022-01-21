@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Img/fl_favicon.png">
+    <title>Viena</title>
+    <!--Se asocia el documento al archivo de estilo style.css y javascript Map.js-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="Map.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1><a href="index.html" target="_self" id="tittle">Viena</a></h1>    
+<header>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle"><img src="Img/ListDisp.png" width="7%"></label>  
+<nav class="menunav"> <!-- Asigna la clase para aplicar en el documento de estilo -->
+    <ul>
+        <li><a class="bottonmenu" href="pg_one.html" target="_self">Ubicación</a></li> <!-- Asigna el estilo a cada botton por medio de la clase botton menu -->
+        <li><a class="bottonmenu" href="pg_two.html" target="_self">Población</a></li>
+        <li><a class="bottonmenu" href="pg_three.html" target="_self">Actividades</a></li>
+        <li><a class="bottonmenu" href="pg_four.html" target="_self">Historia</a></li>
+        <li><a class="bottonmenu" href="pg_Map.html" target="_self">Mapa</a></li>
+        <li><a class="bottonmenu" href="Ref.html" target="_self">Referencias</a></li>
+    </ul>    
+</nav>
+</header>
+    <h2>
+        Mapa interactivo de Viena
+    </h2>
+<!--Elemento que contiene el mapa y sus íconos-->
+    <div class="MapContainer">
+        <!--Imagen base del mapa-->
+        <img src="Img/imgMap/BaseMap1.svg" id="Map">
+        <!--Imagen de los botones-->
+        <a href="#Information" target="_self"><img class="P01" onclick="Punto1()" src="Img/imgMap/Castle.svg" alt="Palacio de Habsburgo"></a>
+        <a href="#Information" target="_self"><img class="P2" onclick="Punto2()" src="Img/imgMap/Museum.svg" alt="Ayuntamiento de Viena"></a>
+        <a href="#Information" target="_self"><img class="P3" onclick="Punto3()" src="Img/imgMap/Music.svg" alt="Musikverein"></a>
+        <a href="#Information" target="_self"><img class="P4" onclick="Punto4()" src="Img/imgMap/Church.svg" alt="Iglesia De San Carlos Borromeo"></a>
+        <a href="#Information" target="_self"><img class="P5" onclick="Punto5()" src="Img/imgMap/Art.svg" alt="Kunsthalle Wien Museumsquartier"></a>
+        <a href="#Information" target="_self"><img class="P6" onclick="Punto6()" src="Img/imgMap/Music.svg" alt="Sound of Vienna"></a>
+        <a href="#Information" target="_self"><img class="P7" onclick="Punto7()" src="Img/imgMap/Church.svg" alt="Iglesia votiva"></a>
+        <a href="#Information" target="_self"><img class="P8" onclick="Punto8()" src="Img/imgMap/Church.svg" alt="Maria am Gestade"></a>
+        <a href="#Information" target="_self"><img class="P9" onclick="Punto9()" src="Img/imgMap/Art.svg" alt="Museo de Artes Aplicadas"></a>
+        <a href="#Information" target="_self"><img class="P10" onclick="Punto10()" src="Img/imgMap/Food.svg" alt="Zona de restaurantes y bares"></a>
+    </div>
+    
+    <div id="ContainerInfo">
+        <p id="Information">
+            Mapa interactivo del centro de Viena 
+            <br>
+            Haz clíck sobre los íconos del mapa para ver información sobre el lugar
+        </p>
+    </div>
+    <div>
+        <button onclick="hide()" id="Button">Ocultar</button>
+    </div>
+
+    <footer class="fx_footer"> <!-- Pie de página -->
+        <div class="ft_content">
+            <p>
+                Autor: Juan Manuel Córdoba Peña
+            </p>
+            <nav>
+                <ul>
+                <li><a href="#tittle" class="bottonmenu">Inicio página</a></li>
+                <li><a  href="Ref.html" target="_self" class="bottonmenu" >Referencias</a></li>
+                <li><a href="mailto:mcordobap@unal.edu.co" class="bottonmenu">Correo electrónico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

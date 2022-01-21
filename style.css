@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');/* Importa el fondo de texto para utilizar en la página */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');/* Importa el fondo de texto para utilizar en la página */
 @font-face {
     font-family: Spartan, sans-serif; /*Define una fuente*/
     src: url('https://fonts.google.com/specimen/Spartan?preview.size=20#standard-styles'); /*Indica la ubicación de la fuente*/
@@ -7,6 +8,7 @@
 /* Etiqueta de elementos generales */
 html{ 
      background-color: #d5e7cc; /* Aplica el color a la parte de atrás de la página */
+     scroll-behavior: smooth;/*Para dar el efecto de bajar la pantalla lentamente*/
     }
 body{
     width: 70%; /* Establece un ancho de la página de acuerdo con el elemento contenedor, en este caso html, la pantalla*/
@@ -17,10 +19,6 @@ body{
 }
 #toggle{ /*Boton de despligue del menú*/
     display: none; /*Evita que este aparezca para este tamaño*/
-    width: 2%;
-}
-#LD{
-    width: 15%;
 }
 header {
     width: 100%;
@@ -64,7 +62,7 @@ li{ /* Estilo de los ítems de listas */
     color:black;
     font-size: 1em;
     text-align: justify;
-    margin: 2%;
+    margin: 1%;
 }
 ul>li>ul{
     position: relative;
@@ -94,29 +92,29 @@ ul>li>ul{
     text-align: center;
 
 }
+.menunav ul {
+    list-style: none;    
+} 
+.menunav li{
+    display: inline-flex;
+}
 .bottonmenu{ /* Establece el estilo para cada botón del menu de navegación */
     outline-style: solid; /* Establece el estilo del contorno del elemento */
     outline-color: #5c8551; /* Indica el color del contorno */
     background-color: #96BF8F; 
     color: #F2F2F2;
-    padding: 0.5% 2% 0.5% 2%;
     border-radius: 25px; /* Define el radio de redondeo de las esquinas */
-}
-.menunav ul {
-    list-style: none;    
-} 
-.menunav li{
-    display: inline;
+    padding: 5px;
 }
 .bottonmenu:hover{ /* Indica el estilo cuando el cursor está sobre los botones */
     color: #494949 ;
     background-color: #F2F2F2;
     border-width: 1px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
     border-radius: 0px; /* Define el radio de redondeo de las esquinas */
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     transition: all 0.5s ease-in-out;
 }
 /* Estilo del pie de página */
@@ -142,6 +140,7 @@ ul>li>ul{
     text-align: center;
     display: inline;
     padding-top: 5%;
+    margin-top: 15px;
 }
 .ft_content ul {
     list-style: none; 
@@ -325,6 +324,122 @@ ul>li>ul{
     margin: 5px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
 }
+/* Estilo pg_Map */
+.MapContainer{
+    position:relative; 
+	font-size:1.15em;
+}
+#Map{
+    width: 98%;
+	display: block;
+	margin: auto;
+}
+#Map:hover {
+	-webkit-transform: scale(1); /* A través de la propiedad transformación aplica una modificación en dos dimensiones */
+	transform: scale(1);
+}
+/*Estilo de cada ícono en donde se determina su ubicación para ser RWD*/
+.P01{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:58%;
+	left: 44%;
+}
+/*.MapContainer:hover .P01{*/
+/*Se utiliza la propiedad filter para cambiar el color de los íconos en el mapa al colocar el cursor con el selector hover*/
+.P01:hover,.P2:hover,.P3:hover,.P4:hover,.P5:hover,.P6:hover,.P7:hover,.P8:hover,.P9:hover,.P10:hover{
+    filter: invert(14%) sepia(78%) saturate(7469%) hue-rotate(1deg) brightness(104%) contrast(104%);
+}
+.P01:visited,.P2:visited,.P3:visited,.P4:visited,.P5:visited,.P6:visited,.P7:visited,.P8:visited,.P9:visited,.P10:visited{
+    filter: invert(54%) sepia(9%) saturate(8%) hue-rotate(7deg) brightness(92%) contrast(86%);
+}
+.P2{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:31%;
+	left:32%;
+}
+.P3{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:80%;
+	left:55.5%;
+}
+.P4{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:90%;
+	left:55%;
+}
+.P5{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:67%;
+	left: 33%;
+}
+.P6{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:67.5%;
+	left: 65.5%;
+}
+.P7{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:9%;
+	left: 35%;
+}
+.P8{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:18%;
+	left: 54%;
+}
+.P9{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:45%;
+	left: 72%;
+}
+.P10{
+    position:absolute;
+	z-index:2;
+	width:5%;
+	top:29%;
+	left: 61%;
+}
+/*Imagen de fondo*/
+#ContainerInfo{
+    margin: 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Information{
+    font-family: 'Playfair Display', serif;
+    padding:2%;
+    width: 35%;
+    min-width: 200px;
+}
+/*Botón de mostrar/ocultar*/
+#Button{
+    margin: 2%;
+    text-transform:uppercase;
+    background-color:#6AA668;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    border-radius:0.15em;
+    color:#FFFFFF;
+    box-sizing: border-box;
+    outline-style:none;
+}
 /* Estilo de referencias */
 .ListaRef{
     word-wrap: break-word; /* Evita el desbordamiento de los link fuera del body */
@@ -368,15 +483,6 @@ ul>li>ul{
     transition: all 1s; 
     padding: 10px;   /* Padding de la barra de navegación */
     min-width: 135px;
-    background: repeating-linear-gradient( /* Establece en el fondo un patrón de repetición lineal de gradiente (transición progresiva entre dos o más colores). <ángulo>, <color 1>, <color 2> ancho entre colores, <color 3>  ancho entre colores, <color 4> ancho apartir del color inicial. De manera general (<ángulo>,<lista de colores>)*/
-            -45deg,
-            #96bf8f88,
-            #96bf8f88 20px,
-            #6aa66888 20px,
-            #6aa66888 40px
-          ); 
-        padding: 1px;   /* Padding de la barra de navegación */
-        text-align: center;
     }
     .menunav ul {
         flex-direction: column;  /* se despliega en sentido vertical*/
@@ -515,7 +621,7 @@ ul>li>ul{
     .grImgpg2{ /* Estilo del grupo de imágenes para mantener un espacio específico entre imágenes y entre el texto */
     height: 25px;     
     width: 50%;
-    min-width: 50px;
+    min-width: 300px;
     float: right;
     white-space: nowrap;
     padding: 2%;
@@ -640,7 +746,7 @@ ul>li>ul{
        outline-color: #5c8551; /* Indica el color del contorno */
        background-color: #96BF8F; 
        color: #F2F2F2;
-       padding: 0.5% 2% 0.5% 2%;
+       padding: 5px;
        border-radius: 25px; /* Define el radio de redondeo de las esquinas */
    }
    .bottonmenu:hover{ /* Indica el estilo cuando el cursor está sobre los botones */
